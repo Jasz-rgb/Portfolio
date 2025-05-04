@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasmine | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul id="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+    <div class="hero">
+      <h1>Hello, I'm <span>Jasmine Sahoo</span></h1>
+      <p>Tech Enthusiast</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate programmer with hands-on experience in Python, Machine learning, Computer vision, and Web development. My projects range from quantitative finance and 3D reconstruction to AI-powered games and OpenGL graphics. I enjoy tackling real-world challenges, experimenting with new technologies, and continuously expanding my skill set through practical, impactful projects.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>College -</strong> Indian Institute of Technology, Kharagpur<br>
+          <em>Bachelor of Technology in Instrumentation Engineering</em><br>
+          2024 – 2028
+        </li>
+        <li>
+          <strong>School -</strong> Techno India Group Public School<br>
+          <em>High School (Science)</em><br>
+          2013 – 2024
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects Section  -->
+    <main>
+        <section id="projects">
+            <h2>Main Projects</h2>
+            <div class="projects-grid">
+          
+              <div class="project-card">
+                <h3>1. Quant – Portfolio Optimization and Backtesting</h3>
+                <p>
+                  <strong>Technologies:</strong> Python, Alpha Vantage API<br>
+                  <strong>Description:</strong> Developed and evaluated a quantitative equity portfolio strategy using Momentum and Volatility indicators. Integrated Alpha Vantage API for data retrieval and applied Risk Parity for asset allocation.<br>
+                  <strong>Key Features:</strong>
+                  <ul>
+                    <li>Constructed a risk-parity portfolio with equal risk contribution per asset.</li>
+                    <li>Backtested over 2 years with monthly rebalancing and a 6-month lookback window.</li>
+                    <li>Included realistic transaction costs (0.001).</li>
+                    <li>Used systematic selection and dynamic allocation to optimize return-risk balance.</li>
+                  </ul>
+                  <strong>Outcome:</strong> Validated the efficiency of Risk Parity and systematic rebalancing in portfolio management.
+                </p>
+                
+                <a href="https://github.com/Jasz-rgb/Quant.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>2. RFID-Based Wearable Item Tracker</h3>
+                <p>
+                  <strong>Technologies:</strong> Embedded C, RFID, Microcontrollers, Hardware Prototyping<br>
+                  <strong>Description:</strong> Designed and prototyped an affordable RFID-based system to prevent the loss of keys and other essential items. The solution integrates a wearable handband and a keychain, utilizing RFID technology to detect separation between the user and their belongings. When the distance threshold is exceeded, the handband provides a vibration alert, helping users avoid misplacement and potential security risks. Responsibilities included embedded systems programming, hardware design, and user experience optimization.<br>
+                  <strong>Outcome:</strong> Strengthened my skills in embedded systems, hardware integration, and user-centered product design.
+                </p>
+                <a href="https://github.com/Jasz-rgb/RFID-Key-Finder-Handband.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>3. Song Genre Clustering using BOW and TF-IDF methods</h3>
+                <p>
+                  <strong>Technologies:</strong> Jupyter Notebook, Machine Learning<br>
+                  <strong>Description:</strong> Clustered songs based on audio features to group them by genre using unsupervised learning. Included audio feature extraction, dimensionality reduction, and clustering algorithms to reveal genre patterns.<br>
+                  <strong>Outcome:</strong> Gained insights into music data and the effectiveness of clustering in genre classification.
+                </p>
+                <a href="https://github.com/Jasz-rgb/song-genre-clustering.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>4. 3D-reconstruction of a Temple</h3>
+                <p>
+                  <strong>Technologies:</strong> Python, OpenCV<br>
+                  <strong>Description:</strong> Reconstructed a 3D model of a temple from a set of 2D images using computer vision.<br>
+                  <ul>
+                    <li><strong>Sparse Reconstruction:</strong> Creating a sparse point cloud by finding key points and their 3D positions.</li>
+                    <li><strong>Dense Reconstruction:</strong> Built a detailed 3D model using image rectification, disparity, and depth maps.</li>
+                  </ul>
+                  <strong>Outcome:</strong> Successfully produced a sparse 3D representation, deepening my understanding of structure-from-motion and stereo vision.
+                </p>
+                <a href="https://github.com/Jasz-rgb/3D-reconstruction.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>5. 2048 – AI Game Solver</h3>
+                <p>
+                  <strong>Technologies:</strong> Python, Pygame<br>
+                  <strong>Description:</strong> Developed the classic 2048 puzzle game and implemented AI strategies to solve it efficiently. Built playable versions using both command line and Pygame. Explored and implemented AI algorithms such as Expectimax and Expectiminimax to maximize scores and minimize moves.<br>
+                  <strong>Outcome:</strong> Created an AI capable of achieving high scores in 2048, deepening my understanding of game AI and algorithm design.
+                </p>
+                <a href="https://github.com/Jasz-rgb/2048.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>6. Lucas-Kanade Sparse Optical flow</h3>
+                <p>
+                  <strong>Technologies:</strong> Python, OpenCV<br>
+                  <strong>Description:</strong> Implemented the Lucas-Kanade sparse optical flow algorithm to track feature points across video frames. Used OpenCV’s <code>goodFeaturesToTrack</code> for feature detection and <code>calcOpticalFlowPyrLK</code> for motion estimation, using only basic OpenCV functions for clarity and educational value.<br>
+                  <strong>Outcome:</strong> Enabled robust tracking of object movement in video, providing a foundation for further work in motion analysis and computer vision.
+                </p>
+                <a href="https://github.com/Jasz-rgb/Lucas-Kanade-Sparse.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>7. OpenGL Shader Understanding</h3>
+                <p>
+                  <strong>Technologies:</strong> OpenGL, GLSL<br>
+                  <strong>Description:</strong> A collection of presentations and code samples documenting my learning journey in OpenGL and shader programming. Demonstrated rendering techniques, shader effects, and explained graphics pipeline concepts.<br>
+                  <strong>Outcome:</strong> Built a strong foundation in graphics programming and shader development.
+                </p>
+                <a href="https://github.com/Jasz-rgb/OpenGL-Shader-Task.git" target="_blank">View Project</a>
+              </div>
+          
+              <div class="project-card">
+                <h3>8. Basic Webdev task</h3>
+                <p>
+                  <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+                  <strong>Description:</strong> A collection of web development experiments and code snippets, exploring front-end and back-end technologies. Built and refined web applications, practicing responsive design and interactive features.<br>
+                  <strong>Outcome:</strong> Enhanced my skills in modern web development and application design.
+                </p>
+                <a href="https://github.com/Jasz-rgb/webdev.git" target="_blank">View Project</a>
+              </div>
+          
+            </div>
+          </section>
+          
+    
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>3D Designing</li>
+            <li>Portfolio Optimization</li>
+            <li>Hardware Designing</li>
+            <li>ML</li>
+            <li>Web Dev</li>
+            <li>OpenCV</li>
+            <li>OpenGL</li>
+            <!-- to add -->
+          </ul>
+        </section>
+    
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Feel free to reach out!</p>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <br>
+    
+          <ul class="contact-info">
+            <li>Email -  <a href="mailto:jasminesahoo007@gmail.com">jasminesahoo007@gmail.com</a></li>
+            <li>LinkedIn -  <a href="https://www.linkedin.com/in/jasmine-sahoo-12aa3831b/">My LinkedIn</a></li>
+            <li>GitHub -  <a href="https://github.com/Jasz-rgb">My GitHub</a></li>
+          </ul>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; 2025 Jasmine. All rights reserved.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
