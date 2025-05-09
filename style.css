@@ -209,7 +209,8 @@ h2 {
   box-shadow: 0 1px 4px rgba(59, 50, 88, 0.07);
 }
 
-.proje background: rgb(250, 250, 250);
+.project-card a:hover {
+ background: rgb(250, 250, 250);
   color: #373244; /* Blue color for links */
 }
 
