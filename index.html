@@ -11,6 +11,8 @@
     <nav>
       <div class="logo">My Portfolio</div>
       <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -154,9 +156,10 @@
         <section id="skills">
           <h2>Skills</h2>
           <ul class="skills-list">
+            <li>Programming</li>
             <li>3D Designing</li>
-            <li>Portfolio Optimization</li>
-            <li>Hardware Designing</li>
+            <li>Quant</li>
+            <li>Embedded Systems</li>
             <li>ML</li>
             <li>Web Dev</li>
             <li>OpenCV</li>
@@ -184,5 +187,13 @@
       </footer>
     
       <script src="script.js"></script>
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+      
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>      
     </body>
     </html>
